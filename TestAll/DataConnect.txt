@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Connection>
+	<Conn1 Class="All.Class.Access" Name="ReadAndWriteCommunicateData">
+		<Address>.\Data\</Address>
+		<DataBase>Value.mdb</DataBase>
+		<UserName></UserName>
+		<Password></Password>
+	</Conn1>
+</Connection>

@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6838A3EA-032E-42E9-AFE0-61BDD58D953F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>All</RootNamespace>
+    <AssemblyName>All</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DirectShow">
+      <HintPath>Dll\DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="MediaPlayerControl.cs">
+      <HintPath>Dll\MediaPlayerControl.cs.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RSPMediaPlayer">
+      <HintPath>Dll\RSPMediaPlayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Api.cs" />
+    <Compile Include="Class\BoShi.cs" />
+    <Compile Include="Class\Check.cs" />
+    <Compile Include="Class\Code.cs" />
+    <Compile Include="Class\CodeImage.cs" />
+    <Compile Include="Class\Data.cs" />
+    <Compile Include="Class\DownLoadFile.cs" />
+    <Compile Include="Class\Draw.cs" />
+    <Compile Include="Class\Error.cs" />
+    <Compile Include="Class\FileIO.cs" />
+    <Compile Include="Class\Flush.cs" />
+    <Compile Include="Class\Form.cs" />
+    <Compile Include="Class\HardInfo.cs" />
+    <Compile Include="Class\LocalValue.cs" />
+    <Compile Include="Class\LockMain.cs" />
+    <Compile Include="Class\Log.cs" />
+    <Compile Include="Class\MideaBarCode.cs" />
+    <Compile Include="Class\Num.cs" />
+    <Compile Include="Class\Process.cs" />
+    <Compile Include="Class\Reflex.cs" />
+    <Compile Include="Class\Region.cs" />
+    <Compile Include="Class\SSFile.cs" />
+    <Compile Include="Class\Style.cs" />
+    <Compile Include="Class\TcpClient.cs" />
+    <Compile Include="Class\TcpServer.cs" />
+    <Compile Include="Class\TypeUse.cs" />
+    <Compile Include="Class\Udp.cs" />
+    <Compile Include="Class\XmlHelp.cs" />
+    <Compile Include="Communite\Com.cs" />
+    <Compile Include="Communite\Communite.cs" />
+    <Compile Include="Communite\DataReadAndWrite.cs" />
+    <Compile Include="Communite\Http.cs" />
+    <Compile Include="Communite\TcpClient.cs" />
+    <Compile Include="Communite\Udp.cs" />
+    <Compile Include="Control\Corner.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Corner.Designer.cs">
+      <DependentUpon>Corner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Delay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Delay.Designer.cs">
+      <DependentUpon>Delay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Icon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Icon.Designer.cs">
+      <DependentUpon>Icon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Light.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Light.Designer.cs">
+      <DependentUpon>Light.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MediaPlayDirect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MediaPlayDirect.Designer.cs">
+      <DependentUpon>MediaPlayDirect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MediaPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MediaPlayer.Designer.cs">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MediaPlayerLocal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\MediaPlayerLocal.Designer.cs">
+      <DependentUpon>MediaPlayerLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\ArrowTitle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\ArrowTitle.Designer.cs">
+      <DependentUpon>ArrowTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\CheckBox.Designer.cs">
+      <DependentUpon>CheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\ComBoBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\ComBoBox.Designer.cs">
+      <DependentUpon>ComBoBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\Hexagon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\Hexagon.Designer.cs">
+      <DependentUpon>Hexagon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\ItemBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\ListBox.Designer.cs">
+      <DependentUpon>ListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\ListItemBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\MetroButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\MetroButton.Designer.cs">
+      <DependentUpon>MetroButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\MoveButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\MoveButton.Designer.cs">
+      <DependentUpon>MoveButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\PicButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\PicButton.Designer.cs">
+      <DependentUpon>PicButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Metro\TitleButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\Metro\TitleButton.Designer.cs">
+      <DependentUpon>TitleButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MoveControl\MoveControl.cs" />
+    <Compile Include="Control\MoveControl\MovePictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\MoveControl\MovePictureBox.Designer.cs">
+      <DependentUpon>MovePictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\MoveControl\MoveShape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\MoveControl\MoveShape.Designer.cs">
+      <DependentUpon>MoveShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PicturePlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\PicturePlayer.Designer.cs">
+      <DependentUpon>PicturePlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Plate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\PlateTime.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\PlateTime.Designer.cs">
+      <DependentUpon>PlateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Seven.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Seven.Designer.cs">
+      <DependentUpon>Seven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Shape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Shape.Designer.cs">
+      <DependentUpon>Shape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TextPlayer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\TextPlayer.Designer.cs">
+      <DependentUpon>TextPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Time.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Time.Designer.cs">
+      <DependentUpon>Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machine\Media\OutDoor\H1H2.cs" />
+    <Compile Include="Machine\Media\OutDoor\K1K2.cs" />
+    <Compile Include="Machine\Media\OutDoor\AllMachine.cs" />
+    <Compile Include="Machine\Media\OutDoor\OA.cs" />
+    <Compile Include="Machine\Media\OutDoor\PQ.cs" />
+    <Compile Include="Machine\Media\OutDoor\XY.cs" />
+    <Compile Include="Machine\Media\SN1200.cs" />
+    <Compile Include="Machine\Media\SN600.cs" />
+    <Compile Include="Meter\BarCode.cs" />
+    <Compile Include="Meter\LocalTest.cs" />
+    <Compile Include="Meter\Mcgs.cs" />
+    <Compile Include="Meter\Meter.cs" />
+    <Compile Include="Meter\ModbusRtu.cs" />
+    <Compile Include="Meter\NetModbusRtu.cs" />
+    <Compile Include="Meter\Plc\LG.cs" />
+    <Compile Include="Meter\Plc\MitsubishiFX.cs" />
+    <Compile Include="Meter\Plc\MitsubishiQ.cs" />
+    <Compile Include="Meter\Plc\Simens1200Net.cs" />
+    <Compile Include="Meter\Plc\Simens1500Net.cs" />
+    <Compile Include="Meter\Plc\SimensSmart200Net.cs" />
+    <Compile Include="Meter\RFID.cs" />
+    <Compile Include="Meter\SSClient.cs" />
+    <Compile Include="Meter\SSRead.cs" />
+    <Compile Include="Meter\SSServer.cs" />
+    <Compile Include="Meter\McgsModbusRtu.cs" />
+    <Compile Include="Meter\SSWrite.cs" />
+    <Compile Include="Meter\WriteInvoke.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Meter\SSCommunicate.cs" />
+    <Compile Include="Window\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\BaseWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\BaseWindow.Designer.cs">
+      <DependentUpon>BaseWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\BaseWindowNormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\BaseWindowNormal.designer.cs">
+      <DependentUpon>BaseWindowNormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\frmAddComValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\frmAddComValue.Designer.cs">
+      <DependentUpon>frmAddComValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\frmAddTextValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\frmAddTextValue.Designer.cs">
+      <DependentUpon>frmAddTextValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\KeyBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\KeyBoard.Designer.cs">
+      <DependentUpon>KeyBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MessageBox.designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\MessageWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MessageWindow.designer.cs">
+      <DependentUpon>MessageWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\MetroMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\MetroMessageBox.designer.cs">
+      <DependentUpon>MetroMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\PlayWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\PlayWindow.Designer.cs">
+      <DependentUpon>PlayWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\Region.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\Region.designer.cs">
+      <DependentUpon>Region.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Window\RegionCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Window\RegionCreate.designer.cs">
+      <DependentUpon>RegionCreate.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\MediaPlayDirect.resx">
+      <DependentUpon>MediaPlayDirect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MediaPlayer.resx">
+      <DependentUpon>MediaPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\MediaPlayerLocal.resx">
+      <DependentUpon>MediaPlayerLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Metro\MetroButton.resx">
+      <DependentUpon>MetroButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Metro\MoveButton.resx">
+      <DependentUpon>MoveButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Metro\TitleButton.resx">
+      <DependentUpon>TitleButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\Time.resx">
+      <DependentUpon>Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\BaseWindow.resx">
+      <DependentUpon>BaseWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\BaseWindowNormal.resx">
+      <DependentUpon>BaseWindowNormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\frmAddComValue.resx">
+      <DependentUpon>frmAddComValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\frmAddTextValue.resx">
+      <DependentUpon>frmAddTextValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\KeyBoard.resx">
+      <DependentUpon>KeyBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\MessageWindow.resx">
+      <DependentUpon>MessageWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\MetroMessageBox.resx">
+      <DependentUpon>MetroMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\PlayWindow.resx">
+      <DependentUpon>PlayWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\Region.resx">
+      <DependentUpon>Region.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Window\RegionCreate.resx">
+      <DependentUpon>RegionCreate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Control\Metro\ItemBox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dll\" />
+    <Folder Include="Meter\AnGui\" />
+    <Folder Include="Meter\TmpMeter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\News.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\LockClient.cs" />
+    <Content Include="Communite\Communite.txt" />
+    <Content Include="Meter\Meter.txt" />
+    <Content Include="Meter\Plc\Simens1200Net.txt" />
+    <Content Include="Meter\Plc\SimensSmart200Net.txt" />
+    <Content Include="Meter\SSServer.txt" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\question2.png" />
+    <None Include="Resources\error1.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\Air - 01.png" />
+    <None Include="Resources\Identity-Card.png" />
+    <None Include="Resources\Digital - One.png" />
+    <None Include="Resources\Digital - Two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"C:\Users\帅\Documents\Code\sscode.exe"  "Shuai的动态库" "$(ProjectDir)</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

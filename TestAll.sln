@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAll", "TestAll\TestAll.csproj", "{2CAB4CDA-4342-4729-85BC-F2857FB404CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "All", "All\All.csproj", "{6838A3EA-032E-42E9-AFE0-61BDD58D953F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://312637477.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = All\\All.csproj
+		SccProjectName1 = All
+		SccLocalPath1 = All
+		SccProjectUniqueName2 = TestAll\\TestAll.csproj
+		SccProjectName2 = TestAll
+		SccLocalPath2 = TestAll
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CAB4CDA-4342-4729-85BC-F2857FB404CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CAB4CDA-4342-4729-85BC-F2857FB404CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CAB4CDA-4342-4729-85BC-F2857FB404CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CAB4CDA-4342-4729-85BC-F2857FB404CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6838A3EA-032E-42E9-AFE0-61BDD58D953F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6838A3EA-032E-42E9-AFE0-61BDD58D953F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6838A3EA-032E-42E9-AFE0-61BDD58D953F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6838A3EA-032E-42E9-AFE0-61BDD58D953F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

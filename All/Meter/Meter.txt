@@ -1,0 +1,34 @@
+﻿MitsubishiQ:Q系列PLC网络读取方法,支持M点,L点,X点,R点
+        public override bool Read<T>(out List<T> value, Dictionary<string, string> parm)
+		读取数据
+		T:数据类型，支持Boolean,UInt16
+		value:返回读取成功后的读取值
+		parm:读取参数
+			必须包含值
+				start:读取启动点。
+				end:读取结束点。
+			可选包含值
+				style:读取点状态。仅当读取Boolean值时，可选X,L,M三个值。默认为M值。
+
+LG：LG系统PLC串口读取方法,支持M点和D点
+        public override bool Read<T>(out List<T> value, Dictionary<string, string> parm)
+		读取数据
+		T:数据类型，支持Boolean,UInt16,Int32,String,Byte
+		value:返回读取成功后的读取值
+		parm:读取参数
+			必须包含值
+				start:读取启动点。
+				end:读取结束点。
+
+
+Simens1200Net：西门子1200系统网络读取方法,支持M点,DB块
+        public override bool Read<T>(out List<T> value, Dictionary<string, string> parm)
+		读取数据
+		T:数据类型,支持Boolean,UInt16,Int32,String
+		value:返回读取成功后的读取值
+		parm:读取参数
+			必须包含值
+				start:读了起始点。
+				end:读取结束点。
+			可选包含值
+				block:读取块偏移。当读取DB块时，填入DB块的偏移值。

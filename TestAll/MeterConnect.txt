@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<AllCommunication>
+  <!--此节点下所有数据都为通讯部件-->
+  <Commun2 Class="All.Communite.Udp" LocalPort="9876" FlushTick="500" Text="测试UDP">
+     <Meter Class="All.Meter.LocalTest" RemotHost="127.0.0.1" RemotPort="9876" Text="本地测试连接">
+       <Read>
+         <Value1>
+           <Text>电压,电流,功率,进风,出风,温差,压力,频率,环境温度,冷凝温度,排气温度,转速</Text>             
+           <Data>float</Data>                                     					
+           <PointStart>10</PointStart>                            					
+           <Len>12</Len>                                          					
+           <Index>0,1,2,3,4,5,6,7,8,9,10,11</Index>                                       					
+           <Part>0</Part> 
+         </Value1>
+         <Value2>
+           <Text>启动,停止,下一步,制热,制冷,急停,内机一,内机二</Text>             
+           <Data>bool</Data>                                     					
+           <PointStart>0</PointStart>                            					
+           <Len>8</Len>                                          					
+           <Index>0,1,2,3,4,5,6,7</Index>                                       					
+           <Part>0</Part> 
+         </Value2>
+       </Read>
+     </Meter>
+  </Commun2>
+</AllCommunication>

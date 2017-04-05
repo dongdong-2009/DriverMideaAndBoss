@@ -1,0 +1,13 @@
+﻿SimensSmart200Net只读取V寄存器
+
+读取类型为	Boolean	则读取单寄存器V0000.0
+读取类型为	Byte	则读取单寄存器VB0000
+读取类型为	Ushort	则读取单寄存器VD0000
+读取类型为	Float	则读取单寄存器VW0000,没有Float类型。
+读取类型为	String	则读取单寄存器VB0000
+读取类型为	Double	则读取双寄存器VW0000,没有Double类型。
+读取类型为	Int32	则读取单寄存器VW0000
+
+对程序内部来说，都按读Byte
+
+
